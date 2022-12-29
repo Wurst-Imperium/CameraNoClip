@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "CameraMixin"
+    "CameraMixin",
+    "ShoulderRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

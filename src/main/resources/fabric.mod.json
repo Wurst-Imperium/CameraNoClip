@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "cameranoclip",
+  "version": "${version}",
+
+  "name": "CameraNoClip",
+  "description": "Allows the camera in 3rd person to go through walls.",
+  "authors": [
+    "Alexander01998"
+  ],
+  "contact": {
+    "homepage": "https://www.wurstimperium.net/cameranoclip",
+    "sources": "https://www.wurstimperium.net/cameranoclip-sources",
+    "issues": "https://www.wurstimperium.net/cameranoclip-issues"
+  },
+
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "client",
+  "entrypoints": {},
+  "mixins": [
+    "cameranoclip.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "mo_glass": "*"
+  },
+  "breaks": {
+    "wurst": "*"
+  }
+}

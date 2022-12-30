@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.wurstclient.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "cameranoclip.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "CameraMixin",
+    "ShoulderRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

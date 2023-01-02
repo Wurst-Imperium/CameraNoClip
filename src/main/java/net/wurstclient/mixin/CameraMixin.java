@@ -14,7 +14,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import net.minecraft.client.render.Camera;
 
-@Mixin(Camera.class)
+// Lower than default priority so that other mixins changing the camera distance
+// are applied first.
+@Mixin(value = Camera.class, priority = 1010)
 public abstract class CameraMixin
 {
 	@Inject(at = @At("HEAD"), method = "clipToSpace(D)D", cancellable = true)

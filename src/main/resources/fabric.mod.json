@@ -30,7 +30,9 @@
     "java": ">=17"
   },
   "suggests": {
-    "mo_glass": "*"
+    "mo_glass": "*",
+    "shouldersurfing": "*",
+    "pehkui": "*"
   },
   "breaks": {
     "wurst": "*"

@@ -75,3 +75,10 @@ publishing {
 		// retrieving dependencies.
 	}
 }
+
+task moveDevLibs(dependsOn: [remapJar, remapSourcesJar]) {
+	doLast {
+		ant.move(file:"${project.buildDir}/devlibs/${archivesBaseName}-${version}-dev.jar", tofile:"${project.buildDir}/libs/${archivesBaseName}-${version}-dev.jar")
+		ant.move(file:"${project.buildDir}/devlibs/${archivesBaseName}-${version}-sources.jar", tofile:"${project.buildDir}/libs/${archivesBaseName}-${version}-sources-dev.jar")
+	}
+}
